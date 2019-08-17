@@ -1,0 +1,59 @@
+<div class="wrapper">
+    <div class="main">
+      <div class="header">
+        <h1>ATM</h1>
+        <div class="welcome">
+          <span>Bem vindo</span>
+          <span>João da Silva</span>
+        </div>
+      </div>
+      <div class="atm">
+        <div class="account">
+          <div class="item">
+            <span>Saldo</span>
+            <span>
+              <span class="symbol">$</span> <span class="value">9.999.999 &infin;</span>
+            </span>
+          </div>
+          <div class="item">
+            <span>Notas disponíveis</span>
+            <span>
+              <span class="bill">$ 100.00</span>
+              <span class="bill">$ 50.00</span>
+              <span class="bill">$ 20.00</span>
+              <span class="bill">$ 10.00</span>
+            </span>
+          </div>
+          <div class="withdraw">
+            <input id="withdraw" type="text" value="$ 100, $ 100, $50, $10" readonly />
+          </div>
+        </div>
+        <div class="action">
+          <input id="num" type="text" class="input" value="260" readonly />
+          <div class="keyboard">
+            <div class="line">
+              <div onclick="addValor('1');">1</div>
+              <div onclick="addValor('2');">2</div>
+              <div onclick="addValor('3');">3</div>
+            </div>
+            <div class="line">
+              <div onclick="addValor('4');">4</div>
+              <div onclick="addValor('5');">5</div>
+              <div onclick="addValor('6');">6</div>
+            </div>
+            <div class="line">
+              <div onclick="addValor('7');">7</div>
+              <div onclick="addValor('8');">8</div>
+              <div onclick="addValor('9');">9</div>
+            </div>
+            <div class="line">
+              <div id="btn-limpar"class="action gray">Limpar</div>
+              <div onclick="addValor('0');">0</div>
+              <div id="btn-confirmar" class="action pink">Confirmar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fast-withdraw"></div>
+    </div>
+  </div>
